@@ -19,10 +19,10 @@ function mediaVoti(studenti) {
     (accumulator, person) => (accumulator += person.voto),
     0
   );
-  return console.log(Math.round(sommaVoti / studenti.length));
+  return Math.round(sommaVoti / studenti.length);
 }
 
-mediaVoti(studenti);
+console.log(mediaVoti(studenti));
 
 // NOMI DEGLI STUDENTI IN ELENCO IN MAIUSCOLO
 const nomiStudentiMaiuscolo = studenti.map((studente) =>
